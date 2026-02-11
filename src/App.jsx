@@ -92,7 +92,8 @@ export default function App() {
   }, [])
 
   return (
-    <div>
+    <div className="min-h-screen w-full overflow-x-hidden">
+
       {/* Header Pill */}
       <header className="site-header">
           <div className="pill" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
@@ -203,7 +204,7 @@ export default function App() {
             <h2 style={{ fontSize: 40, fontWeight: 700, marginBottom: 12, textAlign: 'center' }}><span style={{ background: 'linear-gradient(90deg,#06b6d4,#d4944f)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Skills</span> & Technologies</h2>
             <p style={{ textAlign: 'center', color: '#aaa', marginBottom: 40 }}>Tools and technologies I work with</p>
           </SectionReveal>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               { title: 'Programming', icon: 'fas fa-code', color: '#d4944f', skills: [{ icon: 'fab fa-python', label: 'Python' }, { icon: 'fas fa-table', label: 'Pandas' }, { icon: 'fas fa-calculator', label: 'NumPy' }, { icon: 'fas fa-chart-line', label: 'Matplotlib' }] },
               { title: 'Backend', icon: 'fas fa-server', color: '#06b6d4', skills: [{ icon: 'fas fa-bolt', label: 'FastAPI' }, { icon: 'fas fa-network-wired', label: 'REST APIs' }, { icon: 'fas fa-cube', label: 'SQLAlchemy' }, { icon: 'fas fa-cogs', label: 'CRUD Ops' }] },
@@ -253,7 +254,7 @@ export default function App() {
             <h3 style={{fontSize:28,fontWeight:700,textAlign:'center',marginBottom:24}}>Certifications</h3>
           </SectionReveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: 'fas fa-server', title: 'Backend Development Internship', org: 'Amesie Enterprises • 2025', color: '#d4944f' },
               { icon: 'fas fa-chart-bar', title: 'Data Analytics with Python', org: 'UPTEC Prayagraj', color: '#06b6d4' },
@@ -278,7 +279,7 @@ export default function App() {
             <p style={{ textAlign: 'center', color: '#aaa', marginBottom: 32 }}>Work I'm proud of</p>
           </SectionReveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 18 }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
               { image: '/projects/smart-resume-screener-api.jpeg', title: 'Smart Resume Screener API', desc: 'Python-based resume screening with intelligent text processing and modular backend.', tags: ['Python','NLP','FastAPI'], github: 'https://github.com/Khansashafeeq/smart_resume_screener_api.git' },
               { image: '/projects/hotel-booking-cancellation-dashboard.png', title: 'Hotel Booking Cancellation Dashboard', desc: '10,000+ records with pivot tables, slicers, and revenue optimization insights.', tags: ['Excel','Pivot Tables','Analytics'], github: 'https://github.com/Khansashafeeq/Power-Bi-Dashboard-and-MS-Excel-File-dashboard-.git' },
@@ -315,7 +316,7 @@ export default function App() {
           </SectionReveal>
 
           <SectionReveal delay={0.2}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'start' }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
               <form onSubmit={sendMessage} style={{ background: 'rgba(61,47,47,0.4)', border: '1px solid rgba(212,148,79,0.2)', padding: 28, borderRadius: 12, display: 'flex', flexDirection: 'column', gap: 16 }}>
                 <div>
                   <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: '#d4944f', marginBottom: 8 }}>Name</label>
