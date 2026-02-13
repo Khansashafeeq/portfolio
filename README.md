@@ -45,9 +45,6 @@ npm run preview
 - Recommended: Vercel or Netlify — connect the repo and deploy the `dist/` output from the build.
 - GitHub Pages (simple): use the `gh-pages` package or deploy from `dist/` via GitHub Actions.
 
-## Notes
-- I updated touch interactions and reduced the hero-to-About gap for mobile devices.
-- If you want me to overwrite the existing `README.md`, say so and I will replace it.
 
----
+-
 Made updates to improve mobile spacing and touch interactions. Test on a mobile device and tell me if you want any content or layout changes.
