@@ -26,7 +26,7 @@ button:active{transform:translateY(0)}
 input,textarea{font-family:inherit;font-size:14px;color:#e6e2df;background:rgba(61,47,47,0.5);border:1px solid rgba(212,148,79,0.3);border-radius:8px;padding:10px 12px;transition:all 0.3s ease}
 input:focus,textarea:focus{outline:0;background:rgba(61,47,47,0.7);border-color:rgba(212,148,79,0.6);box-shadow:0 0 12px rgba(212,148,79,0.1)}
 input::placeholder,textarea::placeholder{color:rgba(200,180,160,0.5)}
-@media(max-width:768px){.pill{padding:8px 12px;gap:8px}.pill-left{display:none}.pill-center{padding:8px 14px;font-size:13px}.pill-right{width:38px;height:38px}}
+@media(max-width:768px){.pill{padding:20px 24px;gap:8px}.pill-left{display:none}.pill-center{padding:8px 14px;font-size:13px}.pill-right{width:38px;height:38px}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .text-gradient{background:linear-gradient(90deg,#06b6d4,#d4944f);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero{min-height:68vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
