@@ -100,14 +100,14 @@ export default function App() {
       <header className="site-header">
           <div className="pill" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div className="pill-left" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div className="vertical-name" style={{ fontSize: 18, fontWeight: 700 }}>
-              <div>Khansa Shafeeq</div>
+            <div className="vertical-name" style={{ fontSize: 22, fontWeight: 800, letterSpacing: 0.2, color: '#fff' }}>
+              <div style={{ textShadow: '0 6px 18px rgba(0,0,0,0.45)' }}>Khansa Shafeeq</div>
             </div>
           </div>
-          <div className="pill-center" style={{ padding: '12px 20px', background: 'linear-gradient(90deg,#06b6d4,#d4944f)', borderRadius: 20, color: '#1f2937', fontWeight: 700, fontSize: 16 }}>
+          <div className="pill-center" style={{ padding: '20px 40px', background: 'linear-gradient(90deg,#06b6d4,#d4944f)', borderRadius: 22, color: '#1f2937', fontWeight: 800, fontSize: 18, boxShadow: '0 14px 40px rgba(212,148,79,0.4)' }}>
             <a href="#contact" style={{ color: 'inherit', textDecoration: 'none' }}>Hire Me</a>
           </div>
-          <div className="pill-right" style={{ width: 50, height: 50, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, cursor: 'pointer' }} onClick={() => setMenuOpen(!menuOpen)}>
+          <div className="pill-right" style={{ width: 56, height: 56, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, fontWeight: 800, cursor: 'pointer', boxShadow: '0 14px 40px rgba(0,0,0,0.45)' }} onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? '✕' : '☰'}
           </div>
         </div>
